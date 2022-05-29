@@ -7,7 +7,7 @@ export default function CVForm() {
       <p>Required fields are followed by *.</p>
 
       <section>
-        <h2>Basic Information</h2>
+        <h2>Personal Information</h2>
         <label for='name'>
           Name: <input type='text' id='name' name='name'></input>
         </label>
