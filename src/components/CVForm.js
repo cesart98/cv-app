@@ -52,6 +52,8 @@ export default function CVForm() {
 
       </section>
 
+      <button type='submit'>Submit</button>
+
     </form>
   );
 }
