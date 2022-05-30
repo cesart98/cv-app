@@ -1,52 +1,52 @@
 import '../styles/CVForm.css'
 
-export default function CVForm() {
+export default function CVForm(props) {
   return (
     <form>
       <h1>CV Form</h1>
       <p>Required fields are followed by *.</p>
 
-      <section>
+      <section onChange={(e) => props.handleChange('personal', e)}>
         <h2>Personal Information</h2>
-        <label for='name'>
+        <label htmlFor='name'>
           Name: <input type='text' id='name' name='name'></input>
         </label>
-        <label for='email'>
+        <label htmlFor='email'>
           Email: <input type='email' id='email' name='email'></input>
         </label>
-        <label for='phone'>
+        <label htmlFor='phone'>
           Phone: <input type='tel' id='phone' name='phone'></input>
         </label>
       </section>
 
-      <section>
+      <section onChange={(e) => props.handleChange('education', e)}>
         <h2>Education Information</h2>
-        <label for='school'>
+        <label htmlFor='school'>
           School: <input type='text' id='school' name='school'></input>
         </label>
-        <label for='degree'>
+        <label htmlFor='degree'>
           Degree: <input type='text' id='degree' name='degree'></input>
         </label>
-        <label for='degree-date'>
+        <label htmlFor='degree-date'>
           Date: <input type='month' id='degree-date' name='degree-date'></input>
         </label>
       </section>
 
-      <section>
+      <section onChange={(e) => props.handleChange('work', e)}>
         <h2>Work Information</h2>
-        <label for='company'>
+        <label htmlFor='company'>
           Company: <input type='text' id='company' name='company'></input>
         </label>
-        <label for='position'>
+        <label htmlFor='position'>
           Position: <input type='text' id='position' name='position'></input>
         </label>
-        <label for='task'>
+        <label htmlFor='task'>
           Task: <input type='text' id='task' name='task'></input>
         </label>
-        <label for='start-date'>
+        <label htmlFor='start-date'>
           Start Date: <input type='month' id='start-date' name='start-date'></input>
         </label>
-        <label for='end-date'>
+        <label htmlFor='end-date'>
           End Date: <input type='month' id='end-date' name='end-date'></input>
         </label>
 
