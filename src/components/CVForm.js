@@ -2,7 +2,8 @@ import '../styles/CVForm.css'
 
 export default function CVForm(props) {
   return (
-    <form>
+    <form onSubmit={(e) => props.handleSubmit(e)}>
+
       <h1>CV Form</h1>
       <p>Required fields are followed by *.</p>
 
